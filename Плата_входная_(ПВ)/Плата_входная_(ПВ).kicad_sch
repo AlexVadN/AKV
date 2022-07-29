@@ -1,0 +1,137 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e7a32717-d9ac-4002-ae68-420139c7b56b)
+
+  (paper "A4")
+
+  (title_block
+    (title "АКВ-МП, Плата входная (ПВ)")
+    (date "2022-07-06")
+  )
+
+  (lib_symbols
+    (symbol "Transistors:КТ315Б" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "VT" (id 0) (at 0 8.89 0)
+        (effects (font (size 1.778 1.778)) (justify right))
+      )
+      (property "Value" "КТ315Б" (id 1) (at 0 -8.89 0)
+        (effects (font (size 1.778 1.778)) (justify right))
+      )
+      (property "Footprint" "Soviet:КТ-13" (id 2) (at 0 0 0)
+        (effects (font (size 1.778 1.778)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.778 1.778)) hide)
+      )
+      (symbol "КТ315Б_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.905 0)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 -2.921)
+            (xy 2.54 -5.715)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 -5.715)
+            (xy 2.54 -10.16)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 5.715)
+            (xy -1.905 2.921)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 10.16)
+            (xy 2.54 5.715)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 -5.715)
+            (xy 0.381 -5.207)
+            (xy 1.143 -3.937)
+            (xy 2.54 -5.715)
+          )
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type outline))
+        )
+        (circle (center 0 0) (radius 6.35)
+          (stroke (width 0.508) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "КТ315Б_1_1"
+        (polyline
+          (pts
+            (xy -1.905 4.445)
+            (xy -1.905 -4.445)
+          )
+          (stroke (width 0.508) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (pin passive line (at 2.54 -10.16 90) (length 2.54) hide
+          (name "E" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 10.16 270) (length 2.54) hide
+          (name "C" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -10.16 0 0) (length 2.54) hide
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (symbol (lib_id "Transistors:КТ315Б") (at 98.171 86.741 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 18daf7ab-348a-4c20-aa9f-04cb5ab3f398)
+    (property "Reference" "VT?" (id 0) (at 105.41 85.471 0)
+      (effects (font (size 1.778 1.778)) (justify left))
+    )
+    (property "Value" "КТ315Б" (id 1) (at 105.41 89.281 0)
+      (effects (font (size 1.778 1.778)) (justify left))
+    )
+    (property "Footprint" "Soviet:КТ-13" (id 2) (at 98.171 86.741 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 98.171 86.741 0)
+      (effects (font (size 1.778 1.778)) hide)
+    )
+    (pin "1" (uuid fc8b9627-de8c-4d1f-94e8-38dc584b8076))
+    (pin "2" (uuid 95769e65-aae8-44d0-92bf-a697996f18f6))
+    (pin "3" (uuid e8cfc6db-2240-4710-b8ca-49d462e75232))
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/18daf7ab-348a-4c20-aa9f-04cb5ab3f398"
+      (reference "VT?") (unit 1) (value "КТ315Б") (footprint "Soviet:КТ-13")
+    )
+  )
+)
